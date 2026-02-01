@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "build:webpack": "next build --no-turbopack",
-    "start": "next start",
+    "dev": "node init && next dev",
+    "build": "node init && next build",
+    "build:webpack": "node init && next build --no-turbopack",
+    "start": "node init && next start",
     "lint": "next lint",
     "auth-secret": "node -e \"console.log(require('crypto').randomBytes(32).toString('base64'))\""
   },
